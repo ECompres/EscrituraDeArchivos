@@ -16,25 +16,14 @@ namespace apistreamwritter.Controllers
         [HttpPost]
         public IActionResult CrearArchivo([FromBody] Archivo archivo)
         {
-            string ruta = "C:\\Prueba\\Files\\";
-            string file = ruta + archivo.FileName + ".txt";
-            if (Directory.Exists(ruta))
-            {   
-                using (StreamWriter SW = new StreamWriter(file))
-                {
-                    SW.WriteLine(archivo.FileText);
-                };
-
-            }
-            else
+            using (MemoryStream stream = new MemoryStream())
             {
-                Directory.CreateDirectory(ruta);
-                using (StreamWriter SW = new StreamWriter(file))
-                {
-                    SW.WriteLine(archivo.FileText);
-                };
+                StreamWriter objstreamwriter = new StreamWriter(stream);
+                objstreamwriter.Write(archivo.FileName);
+                objstreamwriter.Flush();
+                objstreamwriter.Close();
+                return File(stream.ToArray(), "text/plain", archivo.FileName);
             }
-            return Ok("Archivo creado en " + file);
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emmanuel\\source\\repos\\apistreamwritter\\apistreamwritter\\apistreamwritter.csproj": {}
+    "C:\\Users\\Emmanuel\\Desktop\\Proyectos\\JavaScript\\Angular\\EscrituraDeArchivos\\apistreamwritter\\apistreamwritter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emmanuel\\source\\repos\\apistreamwritter\\apistreamwritter\\apistreamwritter.csproj": {
+    "C:\\Users\\Emmanuel\\Desktop\\Proyectos\\JavaScript\\Angular\\EscrituraDeArchivos\\apistreamwritter\\apistreamwritter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emmanuel\\source\\repos\\apistreamwritter\\apistreamwritter\\apistreamwritter.csproj",
+        "projectUniqueName": "C:\\Users\\Emmanuel\\Desktop\\Proyectos\\JavaScript\\Angular\\EscrituraDeArchivos\\apistreamwritter\\apistreamwritter.csproj",
         "projectName": "apistreamwritter",
-        "projectPath": "C:\\Users\\Emmanuel\\source\\repos\\apistreamwritter\\apistreamwritter\\apistreamwritter.csproj",
+        "projectPath": "C:\\Users\\Emmanuel\\Desktop\\Proyectos\\JavaScript\\Angular\\EscrituraDeArchivos\\apistreamwritter\\apistreamwritter.csproj",
         "packagesPath": "C:\\Users\\Emmanuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emmanuel\\source\\repos\\apistreamwritter\\apistreamwritter\\obj\\",
+        "outputPath": "C:\\Users\\Emmanuel\\Desktop\\Proyectos\\JavaScript\\Angular\\EscrituraDeArchivos\\apistreamwritter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -41,6 +41,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
